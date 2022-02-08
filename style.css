@@ -129,7 +129,7 @@ footer{
 .divFooter{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 ul{
@@ -181,9 +181,6 @@ ul{
          display: flex;
           flex-direction: column;
          margin-left: 10px;
-     }
-     .state h1{
-         
      }
      #centro img{
          position: relative;
