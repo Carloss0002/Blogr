@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Red+Hat+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Red+Hat+Display:wght@500&family=Ubuntu:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+    
+}
+.container{
+    width: 1440px;
+}
+p{
+    text-align: justify;
+}
+
+/*CABEÇALHO DA PAGE*/
+header{
+    font-family: 'Ubuntu', sans-serif;
+    background: url(images/bg-pattern-intro-desktop.svg) no-repeat;
+    background-color: hsl(353, 100%, 62%);
+    height: 400px;
+    background-size: 2300px;
+    background-position: center;
+    border-bottom-left-radius: 100px;
+}
+header p{
+    color: #E6E6E6;
+}
+header a{
+    color: white;
+}
+header a:hover{
+    color: black;
+}
+header button{
+   color: white;
+}
+
+header nav button {
+        position: relative;
+        left: 590px;
+}
+header .btn{
+    border-radius: 20px;
+}
+
+header .btn:hover{
+    background-color: white;
+}
+
+header .btn a:hover{
+    text-decoration: none;
+    color: hsl(356, 100%, 66%);
+}
+/*SECTION UNICA*/
+
+section h1{
+    margin-top: 90px;
+    font-size : 40px;
+    margin-bottom: 50px;
+}
+
+section img{
+    position: relative;
+    top: -100px;
+    left: 170px;
+        
+}
+.textMargin{
+    margin-left: 100px;
+}
+/*centro div*/
+
+#centro{
+    background-color: hsl(237, 23%, 32%);
+    background-image: url(images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    color: white;
+    height: 300px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+#centro img{
+    position: relative;
+    bottom: 50px;
+    width: 400px;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+#centro  h1{
+    padding-top: 90px;
+    padding-bottom: 10px;
+}
+#centro p{
+    padding-right: 200px;
+}
+/*Div perto do Footer*/
+#lastPart{
+    display: flex;
+    flex-direction: row;
+}
+#lastPart figure{
+    position: relative;
+    right: 900px;
+}
+#lastPart .voar{  
+   position: relative;
+   right: 1000px;
+   top: 100px; 
+   
+}
+#lastPart h2{
+    margin-top: 20px;
+}
+
+/*footer*/
+
+footer{
+    background-color: hsl(240, 10%, 16%);
+    color: white;
+    border-top-right-radius: 100px;
+}
+.divFooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul{
+    font-size: 16px;
+    list-style: none;
+}
+
+
+/*Media Querys*/
+@media (max-width: 768px) {
+    header{
+        height: 600px;
+    }
+    button .pos{
+       position: relative;
+       right: 100px;
+    }
+     header{
+         text-align: center;
+     }
+     /*section*/
+     section{
+         display: flex;
+         flex-direction: column;
+     }
+     section h2{
+
+         text-align: center;
+     }
+     section p{
+         text-align: center;
+         padding-right: 30px;
+     }
+     section img{
+        position: static;
+        margin-left: 50px;
+        width: 500px;
+     }
+     /*CENTRO*/
+     #centro{
+         display: flex;
+         flex-direction: column;
+         height: 900px;
+         margin-top: 50px;
+         
+         
+     }
+     .state{
+         display: flex;
+          flex-direction: column;
+         margin-left: 10px;
+     }
+     .state h1{
+         
+     }
+     #centro img{
+         position: relative;
+         left: -100px;
+         top: -100px;
+         width: 400px;
+         margin-bottom: -200px;
+
+     }
+     /*lastPart*/
+     #lastPart{
+         display: flex;
+         flex-direction: column;
+         height: 1000px;
+        margin-bottom: 10px;
+         
+        
+     }
+      .mobile{
+         background: url(images/illustration-laptop-mobile.svg) no-repeat;
+         background-position: center;
+         display: inline;
+         width: 498px;
+         height: 359px;
+         position: relative;
+         top: -30px;
+         margin-bottom: -120px;
+
+     }
+     #lastPart figure{
+     display: none;
+     }
+
+    .voar{
+        width: 400px;
+        position: relative;
+        left: 10px;
+        text-align: center;
+    
+    }
+ 
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+    .divFooter{
+        flex-direction: column;
+    }
+    .attribution{
+        display: none;
+    }
+    .mob{
+        position: relative;
+        left: -10px;
+        background-color: rgb(100%, 50%, 10%);
+    }
+ }
